@@ -56,5 +56,10 @@ namespace _04_classes
                 }
             }
         }
+
+        public int GetBookCount()
+        {
+            return bookCount;
+        }
     }
 }

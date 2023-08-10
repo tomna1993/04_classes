@@ -26,6 +26,7 @@ namespace Classes
 
             // Static attribute can be accessed by the class name
             Console.WriteLine("Books created: " + Book.bookCount);
+            Console.WriteLine("Books created: " + book1.GetBookCount());
 
             Console.ReadLine();
         }
