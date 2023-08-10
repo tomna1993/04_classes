@@ -13,6 +13,9 @@ namespace _04_classes
         public int pages;
         private string rating;
 
+        // Static attribute
+        public static int bookCount = 0;
+
         // Constructor
         public Book(string aTitle, string aAuthor, int aPages, string aRating) 
         {
@@ -20,6 +23,8 @@ namespace _04_classes
             author = aAuthor;
             pages = aPages;
             Rating = aRating;
+
+            ++bookCount;
         }
 
         //Object method
