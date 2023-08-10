@@ -7,13 +7,20 @@ namespace Classes
     {
         static void Main()
         {
-            Book book1 = new Book("Test Title", "Test Author", 120);
-            Book book2 = new Book("Test Title2", "Test Author2", 560);
+            // G, PG, PG-13, R, NR
+
+            Book book1 = new Book("Test Title", "Test Author", 120, "PG");
+            Book book2 = new Book("Test Title2", "Test Author2", 560, "R");
 
             Console.WriteLine(book1.title);
 
             Console.WriteLine("Is Book 1 thick? " + book1.IsThick());
             Console.WriteLine("Is Book 2 thick? " + book2.IsThick());
+
+            book1.Rating = "G";
+
+            Console.WriteLine("Book 1 rating is: " + book1.Rating);
+            Console.WriteLine("Book 2 rating is: " + book2.Rating);
 
             Console.ReadLine();
         }
